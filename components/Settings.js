@@ -1,13 +1,11 @@
-import React, { View, Text } from 'react-native';
+import React, { View } from 'react-native';
 
 const Settings = () => {
 
   return (
-    <View>
-      <Text>Settings!</Text>
-    </View>
+    <View style={{ flex: 1, backgroundColor: '#77bdb9' }} />
   );
-  
+
 };
 
 export default Settings;

@@ -1,11 +1,9 @@
-import React, { View, Text } from 'react-native';
+import React, { View } from 'react-native';
 
 const Schedule = () => {
 
   return (
-    <View>
-      <Text>Schedule!</Text>
-    </View>
+    <View style={{ flex: 1, backgroundColor: '#98c278' }} />
   );
 
 };
