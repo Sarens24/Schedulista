@@ -4,16 +4,18 @@ const Header = ({ title }) => {
   const styles = StyleSheet.create({
     header: {
       width: '100%',
-      height: 50,
+      height: 100,
       padding: 10,
       backgroundColor: '#ba9b7b',
       flexDirection: 'row',
-      justifyContent: 'center'
+      justifyContent: 'center',
     },
     title: {
-      fontSize: 20,
+      fontSize: 25,
       fontWeight: 'bold',
       color: '#fff',
+      position: 'absolute',
+      bottom: 10
     },
   });
 

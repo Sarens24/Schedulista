@@ -3,10 +3,11 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Schedule from './Schedule';
 import Settings from './Settings';
+import ScheduleConfiguration from './ScheduleConfiguration';
 
 function MyTabBar({ state, descriptors, navigation }) {
   return (
-    <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+    <View>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
         const label =
@@ -61,8 +62,18 @@ const Tab = createMaterialBottomTabNavigator();
 const Footer = () => {
     return (
         <Tab.Navigator labeled={false} tabBar={props => <MyTabBar {...props} />}
-            barStyle={{ backgroundColor: '#ba9b7b' }}
+            barStyle={{ backgroundColor: '#ba9b7b', height: 70 }}
         >
+              <Tab.Screen
+                name="ScheduleConfiguration"
+                options={{
+                    tabBarLabel: 'ScheduleConfiguration',
+                    tabBarIcon: () => (
+                      // or calendar-edit
+                        <MaterialCommunityIcons name="calendar-edit" color='white' size={26} />
+                    )
+                }}
+                component={ScheduleConfiguration} />
             <Tab.Screen
                 name="Schedule"
                 options={{
