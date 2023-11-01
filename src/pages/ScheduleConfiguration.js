@@ -2,7 +2,7 @@ import React, { View } from 'react-native';
 import { useState } from 'react';
 import { Button } from 'react-native-elements';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import AddEventDialog from './AddEventDialog';
+import AddEventDialog from '../components/AddEventDialog';
 
 const ScheduleConfiguration = () => {
 

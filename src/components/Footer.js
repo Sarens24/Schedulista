@@ -1,9 +1,9 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Schedule from './Schedule';
-import Settings from './Settings';
-import ScheduleConfiguration from './ScheduleConfiguration';
+import Schedule from '../pages/Schedule';
+import Settings from '../pages/Settings';
+import ScheduleConfiguration from '../pages/ScheduleConfiguration';
 
 function MyTabBar({ state, descriptors, navigation }) {
   return (
