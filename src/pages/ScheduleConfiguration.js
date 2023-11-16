@@ -1,4 +1,4 @@
-import React, { View } from 'react-native';
+import React, { View, StyleSheet } from 'react-native';
 import { useState } from 'react';
 import { Button } from 'react-native-elements';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -13,7 +13,7 @@ const ScheduleConfiguration = () => {
     }
 
   return (
-    <View style={{ flex: 1, backgroundColor: '#77bdb9', flexDirection: 'row', justifyContent: 'center' }}>
+    <View style={styles.container}>
         <Button
             containerStyle={{
                 position: 'absolute',
@@ -40,4 +40,13 @@ const ScheduleConfiguration = () => {
 
 };
 
-export default ScheduleConfiguration;
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#77bdb9',
+        flexDirection: 'row',
+        justifyContent: 'center'
+    },
+  });
+
+export default ScheduleConfiguration
